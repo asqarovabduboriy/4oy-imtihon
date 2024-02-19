@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realco</title>
+    <link rel="stylesheet" href="./components/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="wraper_small_header">
+            <div class="small_header">
+                <p>Get your dream house in a week.</p>
+                <img src="./imgs/close.png" alt="close" />
+            </div>
+        </div>
+        <div class="Big_header">
+            <div class="logo_header">
+                <img src="./imgs/logo.png" alt="" />
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Properties <img src="./imgs/strelka.png" alt="" /></li>
+                    <li>About</li>
+                    <li>contact</li>
+                    <li>
+                        <div class="wrapper">
+                            <input type="checkbox" id="toggle-theme" class="checkbox" />
+                            <label for="toggle-theme" class="switch"></label>
+                        </div>
+                    </li>
+                    <li class="search_wraper">
+                        <img class="search" src="./imgs/search.png" alt="" />search
+                    </li>
+                    <div class="button_wraper">
+                        <button class="cart_btn">
+                            <img src="./imgs/shopping.png" alt="shoping" />Cart
+                        </button>
+                        <button class="property_btn">Find a property</button>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="responsive_header">
+        <div class="container">
+            <div class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./imgs/logo.png" alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <img src="./imgs/logo.png" alt="">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="toggle-theme" class="checkbox" />
+                            <label for="toggle-theme" class="switch"></label>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page">Contact</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Properties
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">
+                                    Search
+                                </button>
+                            </form>
+                            <div class="button_wraper mt-3">
+                                <button class="cart_btn">
+                                    <img src="./imgs/shopping.png" alt="shoping" />Cart
+                                </button>
+                                <button class="property_btn">Find a property</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="bg_main">
+                <div class="bg_main_smal_wraper">
+                    <div class="main_logo">
+                        <img src="./imgs/logomain2.png" alt="" />
+                    </div>
+
+                    <div class="container">
+                        <div class="main_text_wraper">
+                            <div class="rektangl_one">
+                                <p>Find your dream place</p>
+                            </div>
+                            <div class="main_text">
+                                <h1>Find house for your family in minutes</h1>
+                                <p>
+                                    Aenean sodales mauris quis tellus facilisis, vel mattis
+                                    magna. Interdum curabitur eget aliquam elit in mauris purus.
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-18" viewBox="0 0 40 40">
+                                    <path
+                                        d="M30.776 27.146l-1.32-1.32-3.63 3.632 1.32 1.32 3.63-3.632zm1.368 1.368l6.035 6.035c.39.39.4 1.017.008 1.408l-2.23 2.23c-.387.387-1.015.387-1.41-.008l-6.035-6.035 3.63-3.63zm-8.11 1.392c-2.356 1.363-5.092 2.143-8.01 2.143C7.174 32.05 0 24.873 0 16.023S7.174 0 16.024 0c8.85 0 16.025 7.174 16.025 16.024 0 2.918-.78 5.654-2.144 8.01l8.96 8.962c1.175 1.174 1.184 3.07.008 4.246l-1.632 1.632c-1.17 1.17-3.067 1.173-4.247-.007l-8.96-8.96zm-8.01.54c7.965 0 14.422-6.457 14.422-14.422 0-7.965-6.457-14.422-14.422-14.422-7.965 0-14.422 6.457-14.422 14.422 0 7.965 6.457 14.422 14.422 14.422zm0-2.403c6.638 0 12.018-5.38 12.018-12.02 0-6.636-5.38-12.017-12.018-12.017-6.637 0-12.018 5.38-12.018 12.018 0 6.638 5.38 12.02 12.018 12.02zm0-1.402c5.863 0 10.616-4.752 10.616-10.616 0-5.863-4.753-10.616-10.616-10.616-5.863 0-10.616 4.753-10.616 10.616 0 5.864 4.753 10.617 10.616 10.617z"
+                                        fill-rule="evenodd" />
+                                </symbol>
+                                <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-5" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10zm1.35-10.123l3.567 3.568-1.225 1.226-3.57-3.568-3.567 3.57-1.226-1.227 3.568-3.568-3.57-3.57 1.227-1.224 3.568 3.568 3.57-3.567 1.224 1.225-3.568 3.57zM10 18.272c4.568 0 8.272-3.704 8.272-8.272S14.568 1.728 10 1.728 1.728 5.432 1.728 10 5.432 18.272 10 18.272z"
+                                        fill-rule="evenodd" />
+                                </symbol>
+                            </svg>
+
+                            <form novalidate="novalidate" class="searchbox sbx-custom orapturuvchi_search">
+                                <div role="search" class="sbx-custom__wrapper  ">
+                                    <input type="search" name="search" placeholder="Search" autocomplete="off"
+                                        required="required" class="sbx-custom__input" />
+                                        <button class="btn_serch">Find property</button>
+                                 <button type="submit" title="Submit your search query."
+                                        class="sbx-custom__submit">
+                                        <svg role="img" aria-label="Search">
+                                            <use xlink:href="#sbx-icon-search-18"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                                        <svg role="img" aria-label="Reset">
+                                            <use xlink:href="#sbx-icon-clear-5"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="main_logo_two">
+                                <img src="./imgs/mainlogo3.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_imgs">
+                        <img src="./imgs/main1.png" alt="" />
+                    </div>
+                </div>
+                <div class="main_imgs_mobilni">
+                    <img src="./imgs/main1.png" alt="" />
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main_two_wraper">
+                    <div class="main_two_wraper_text">
+                        <p>As seen on the world's best magazines and media</p>
+                    </div>
+                    <div class="imgs_container">
+                        <img src="./imgs/IMAGE_logo5.png" alt="" />
+                        <img src="./imgs/IMAGE._logo4png.png" alt="" />
+                        <img src="./imgs/IMAGE_logo3.png" alt="" />
+                        <img src="./imgs/IMAGE_logo2.png" alt="" />
+                        <img src="./imgs/IMAGE._logo1png.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="card_section">
+                    <h1>How it works</h1>
+                    <p>
+                        Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id
+                        efficitur pellentesque. Maecenas varius felis felis.
+                    </p>
+                </div>
+                <div class="card_section_big">
+                    <div class="border_crad">
+                        <div class="card_section_imgs">
+                            <img src="./imgs/Frame_house.png" alt="" />
+                        </div>
+                        <div class="card_text_section">
+                            <div class="title">
+                                <h3>Find property</h3>
+                            </div>
+                            <p>
+                                Odales mauris quis tellus facilisis, vel mattis magna
+                                interdum. Curabitur eget aliquam elit. In mauris purus, auctor
+                                a eleifend non.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border_crad">
+                        <div class="card_section_imgs">
+                            <img src="./imgs/Frame2.png" alt="" />
+                        </div>
+                        <div class="card_text_section">
+                            <div class="title">
+                                <h3>Find property</h3>
+                            </div>
+                            <p>
+                                Odales mauris quis tellus facilisis, vel mattis magna
+                                interdum. Curabitur eget aliquam elit. In mauris purus, auctor
+                                a eleifend non.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border_crad">
+                        <div class="card_section_imgs">
+                            <img src="./imgs/Frame_key.png" alt="" />
+                        </div>
+                        <div class="card_text_section">
+                            <div class="title">
+                                <h3>Find property</h3>
+                            </div>
+                            <p>
+                                Odales mauris quis tellus facilisis, vel mattis magna
+                                interdum. Curabitur eget aliquam elit. In mauris purus, auctor
+                                a eleifend non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_section_there">
+                    <div class="there_wraper">
+                        <div class="main_sectin_there_text">
+                            <div class="rektangl_two">
+                                <p>Comfort first</p>
+                            </div>
+                            <h1>The best houses for family comfort</h1>
+                            <p>
+                                Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin
+                                sollicitudin, lorem non posuere blandit.
+                            </p>
+                            <div class="main_sectin_there_btn_wraper">
+                                <button>Explore properties</button>
+                                <p>
+                                    Contact agent <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="main_sectin_there_img_wraper">
+                            <div class="imgs_room">
+                                <img class="rOOm_one" src="./imgs/IMAGE_room.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="four_wraper">
+                        <div class="four_imgs_container">
+                            <div class="imgs_room">
+                                <img src="./imgs/IMAGE_room2.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="four_wraper_continer">
+                            <div class="four_text_container">
+                                <div class="rektangle_there">
+                                    <span>Quick and easy</span>
+                                </div>
+                                <h1>Fast forward process</h1>
+                                <p>
+                                    Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis
+                                    sit amet mi arcu praesent nec felis nisl.
+                                </p>
+                            </div>
+                            <div class="four_card_section">
+                                <div class="four_cards_secction">
+                                    <div class="text_content">
+                                        <div class="four_card_img_secction">
+                                            <img src="./imgs/price.png" alt="" />
+                                        </div>
+                                        <h4>Affordable prices</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Suspendisse varius enim in eros.
+                                        </p>
+                                    </div>
+                                    <div class="text_content">
+                                        <div class="four_card_img_secction">
+                                            <img src="./imgs/work.png" alt="" />
+                                        </div>
+                                        <h4>Affordable prices</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Suspendisse varius enim in eros.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main_sectin_there_btn_wraper">
+                                    <button>Explore properties</button>
+                                    <p>
+                                        Contact agent
+                                        <img src="./imgs/chevron_right.png" alt="" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_color">
+                <div class="bg_color_img">
+                    <img src="./imgs/rasm1.png" alt="" />
+                </div>
+                <div class="container">
+                    <div class="main_section_besh">
+                        <div class="rektangle_besh">
+                            <span>Properties</span>
+                        </div>
+                        <div class="main_section_besh_text_content">
+                            <h1>Houses in your favorite area</h1>
+                        </div>
+                    </div>
+                    <div class="main_section_besh_card_wraper flex_beradigan div">
+                        <div class="hamasini_Orapturadigan">
+                            <div class="rasmni_orapturadigan">
+                                <img src="./imgs/Frame_rasm1.png" alt="" />
+                            </div>
+                            <div class="Matin_orapturuvchi">
+                                <h3>Cozy studio in Los Angeles</h3>
+                                <b>$ 1,200.00 USD</b>
+                            </div>
+                            <div class="metka_img">
+                                <img src="./imgs/metka.svg" alt="" width="16px" height="24px" />
+                                <span>2263 Southlea, Los Angeles</span>
+                            </div>
+                            <div class="card_footer_logo_section">
+                                <img src="./imgs/vana.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/kravatsvg.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/uchburchak.svg" alt="" />
+                                <span>840 sqft</span>
+                            </div>
+                        </div>
+                        <div class="hamasini_Orapturadigan">
+                            <div class="rasmni_orapturadigan">
+                                <img src="./imgs/Frame_rasm2.png" alt="" />
+                            </div>
+                            <div class="Matin_orapturuvchi">
+                                <h3>Cozy studio in Los Angeles</h3>
+                                <b>$ 1,200.00 USD</b>
+                            </div>
+                            <div class="metka_img">
+                                <img src="./imgs/metka.svg" alt="" width="16px" height="24px" />
+                                <span>2263 Southlea, Los Angeles</span>
+                            </div>
+                            <div class="card_footer_logo_section">
+                                <img src="./imgs/vana.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/kravatsvg.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/uchburchak.svg" alt="" />
+                                <span>840 sqft</span>
+                            </div>
+                        </div>
+                        <div class="hamasini_Orapturadigan">
+                            <div class="rasmni_orapturadigan">
+                                <img src="./imgs/Frame_rasm3.png" alt="" />
+                            </div>
+                            <div class="Matin_orapturuvchi">
+                                <h3>Cozy studio in Los Angeles</h3>
+                                <b>$ 1,200.00 USD</b>
+                            </div>
+                            <div class="metka_img">
+                                <img src="./imgs/metka.svg" alt="" width="16px" height="24px" />
+                                <span>2263 Southlea, Los Angeles</span>
+                            </div>
+                            <div class="card_footer_logo_section">
+                                <img src="./imgs/vana.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/kravatsvg.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/uchburchak.svg" alt="" />
+                                <span>840 sqft</span>
+                            </div>
+                        </div>
+                        <div class="hamasini_Orapturadigan">
+                            <div class="rasmni_orapturadigan">
+                                <img src="./imgs/Frame_rasm4.png" alt="" />
+                            </div>
+                            <div class="Matin_orapturuvchi">
+                                <h3>Cozy studio in Los Angeles</h3>
+                                <b>$ 1,200.00 USD</b>
+                            </div>
+                            <div class="metka_img">
+                                <img src="./imgs/metka.svg" alt="" width="16px" height="24px" />
+                                <span>2263 Southlea, Los Angeles</span>
+                            </div>
+                            <div class="card_footer_logo_section">
+                                <img src="./imgs/vana.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/kravatsvg.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/uchburchak.svg" alt="" />
+                                <span>840 sqft</span>
+                            </div>
+                        </div>
+                        <div class="hamasini_Orapturadigan">
+                            <div class="rasmni_orapturadigan">
+                                <img src="./imgs/IMAGE_rasm5.png" alt="" />
+                            </div>
+                            <div class="Matin_orapturuvchi">
+                                <h3>Cozy studio in Los Angeles</h3>
+                                <b>$ 1,200.00 USD</b>
+                            </div>
+                            <div class="metka_img">
+                                <img src="./imgs/metka.svg" alt="" width="16px" height="24px" />
+                                <span>2263 Southlea, Los Angeles</span>
+                            </div>
+                            <div class="card_footer_logo_section">
+                                <img src="./imgs/vana.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/kravatsvg.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/uchburchak.svg" alt="" />
+                                <span>840 sqft</span>
+                            </div>
+                        </div>
+                        <div class="hamasini_Orapturadigan">
+                            <div class="rasmni_orapturadigan">
+                                <img src="./imgs/rasm_6.png" alt="" />
+                            </div>
+                            <div class="Matin_orapturuvchi">
+                                <h3>Cozy studio in Los Angeles</h3>
+                                <b>$ 1,200.00 USD</b>
+                            </div>
+                            <div class="metka_img">
+                                <img src="./imgs/metka.svg" alt="" width="16px" height="24px" />
+                                <span>2263 Southlea, Los Angeles</span>
+                            </div>
+                            <div class="card_footer_logo_section">
+                                <img src="./imgs/vana.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/kravatsvg.svg" alt="" />
+                                <span>2</span>
+                                <img src="./imgs/uchburchak.svg" alt="" />
+                                <span>840 sqft</span>
+                            </div>
+                        </div>
+
+                        <div class="button_orapturuvchi">
+                            <button>Explore properties</button>
+                            <span>Contact agent <img src="./imgs/chevron_right.png" alt="" /></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg_color_img_two">
+                    <img src="./imgs/rasm2png.png" alt="" />
+                </div>
+                <div class="container">
+                    <div class="location_section">
+                        <h1>Locations</h1>
+                        <p>
+                            Nunc mi ante, fringilla eget iaculis et, maximus vel purus
+                            integer lacus urna, aliquet non nisl sit amet.
+                        </p>
+                    </div>
+                    <div class="flex_beradigan_hamasini_orapturadigan">
+                        <div class="border_style">
+                            <div class="text_content_title">
+                                <h3>San Francisco, CA</h3>
+                                <p>
+                                    View Properties
+                                    <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border_style">
+                            <div class="text_content_title">
+                                <h3>Los Angeles, CA</h3>
+                                <p>
+                                    View Properties
+                                    <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border_style">
+                            <div class="text_content_title">
+                                <h3>San Diego, CA</h3>
+                                <p>
+                                    View Properties
+                                    <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border_style">
+                            <div class="text_content_title">
+                                <h3>New York, NY</h3>
+                                <p>
+                                    View Properties
+                                    <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border_style">
+                            <div class="text_content_title">
+                                <h3>Las Vegas, NV</h3>
+                                <p>
+                                    View Properties
+                                    <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border_style">
+                            <div class="text_content_title">
+                                <h3>Miami, FL</h3>
+                                <p>
+                                    View Properties
+                                    <img src="./imgs/chevron_right.png" alt="" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_orapturuvchi">
+                        <button>Explore properties</button>
+                        <span>Contact agent <img src="./imgs/chevron_right.png" alt="" /></span>
+                    </div>
+
+                    <div class="bagraund_color">
+                        <div class="img_orapturuvchi_div">
+                            <img src="./imgs/family.png" alt="" />
+                        </div>
+                        <div class="main_olti_text_content">
+                            <h1>Families are our priority</h1>
+                            <p>
+                                Curabitur eget aliquam elit. In mauris purus, auctor a
+                                eleifend non, placerat vel arcu. In non consectetur lorem.
+                                Morbi non varius sapien suscipit mauri.
+                            </p>
+                            <div class="main_olti_button_content">
+                                <button>Get started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="yetti_section">
+                    <h1>What customers say</h1>
+                    <p>Faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                </div>
+                <div class="flex_elment">
+                    <div class="Hamasini_orapturuvchhi_element">
+                        <div class="strs_orapturuvchi">
+                            <img src="./imgs/stars.png" alt="" />
+                        </div>
+                        <div class="text_content_yetti_section">
+                            <p>
+                                "Aliquam erat volutpat. Nulla pretium nec urna et convallis.
+                                Ut varius mi lacus, nec molestie libero ultricies nec. Aenean
+                                lacinia dui elit, ut gravida quam."
+                            </p>
+                        </div>
+                        <div class="pople_section">
+                            <img src="./imgs/erkak.png" alt="" />
+                            <b>Michael Webb</b>
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                    <div class="Hamasini_orapturuvchhi_element">
+                        <div class="strs_orapturuvchi">
+                            <img src="./imgs/stars.png" alt="" />
+                        </div>
+                        <div class="text_content_yetti_section">
+                            <p>
+                                "Aliquam erat volutpat. Nulla pretium nec urna et convallis.
+                                Ut varius mi lacus, nec molestie libero ultricies nec. Aenean
+                                lacinia dui elit, ut gravida quam."
+                            </p>
+                        </div>
+                        <div class="pople_section">
+                            <img src="./imgs/ayol.png" alt="" />
+                            <b>Michael Webb</b>
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                    <div class="Hamasini_orapturuvchhi_element">
+                        <div class="strs_orapturuvchi">
+                            <img src="./imgs/stars.png" alt="" />
+                        </div>
+                        <div class="text_content_yetti_section">
+                            <p>
+                                "Aliquam erat volutpat. Nulla pretium nec urna et convallis.
+                                Ut varius mi lacus, nec molestie libero ultricies nec. Aenean
+                                lacinia dui elit, ut gravida quam."
+                            </p>
+                        </div>
+                        <div class="pople_section">
+                            <img src="./imgs/ayol2png.png" alt="" />
+                            <b>Michael Webb</b>
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_color_end">
+                <div class="container">
+                    <div class="padding_item">
+                        <div class="rektangl_end">
+                            <span>Blog</span>
+                        </div>
+                        <div class="footer_text_content">
+                            <div class="footer_text_content_wraper">
+                                <h1>Latest posts</h1>
+                                <p>
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                                    ultrices posuere cubilia curae. Praesent efficitur nibh
+                                    massa morbi sagittis ornare dui in ornare.
+                                </p>
+                            </div>
+                            <div class="buton_orapturuvchi">
+                                <button>View all</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eigtsection_cart_flex_elemnt">
+                        <div class="Hamasini_orapturuvchhi_ota_element">
+                            <div class="rasm_orapturuvchi">
+                                <img src="./imgs/Frame_rasm1.png" alt="">
+                            </div>
+                            <div class="cardagi_bazi_elementalrni_orapturuvchi">
+                                <div class="rektangl_end_end">
+                                    <p>Trends</p>
+                                </div>
+                                <div>
+                                    <span>May 10, 2022</span>
+                                </div>
+                            </div>
+                            <div class="text_orapturuvchi_sectino">
+                                <h1>The 9 best homes in New York</h1>
+                                <p>Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue
+                                    donec.</p>
+                            </div>
+                            <div class="read_more">
+                                <span>Read more <img src="./imgs/chevron_right.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="Hamasini_orapturuvchhi_ota_element">
+                            <div class="rasm_orapturuvchi">
+                                <img src="./imgs/Frame_rasm2.png" alt="">
+                            </div>
+                            <div class="cardagi_bazi_elementalrni_orapturuvchi">
+                                <div class="rektangl_end_end">
+                                    <p>Trends</p>
+                                </div>
+                                <div>
+                                    <span>May 10, 2022</span>
+                                </div>
+                            </div>
+                            <div class="text_orapturuvchi_sectino">
+                                <h1>The 9 best homes in New York</h1>
+                                <p>Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue
+                                    donec.</p>
+                            </div>
+                            <div class="read_more">
+                                <span>Read more <img src="./imgs/chevron_right.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="Hamasini_orapturuvchhi_ota_element">
+                            <div class="rasm_orapturuvchi">
+                                <img src="./imgs/Frame_rasm3.png" alt="">
+                            </div>
+                            <div class="cardagi_bazi_elementalrni_orapturuvchi">
+                                <div class="rektangl_end_end">
+                                    <p>Trends</p>
+                                </div>
+                                <div>
+                                    <span>May 10, 2022</span>
+                                </div>
+                            </div>
+                            <div class="text_orapturuvchi_sectino">
+                                <h1>The 9 best homes in New York</h1>
+                                <p>Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue
+                                    donec.</p>
+                            </div>
+                            <div class="read_more">
+                                <span>Read more <img src="./imgs/chevron_right.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer_flex">
+                        <div class="footer_logo">
+                            <img src="./imgs/logo.png" alt="logo">
+                        </div>
+                        <div class="justify_content">
+                            <div class="footer_link">
+                                <p><a href="">Page</a></p>
+                                <p><a href="">Home</a></p>
+                                <p><a href="">About</a></p>
+                                <p><a href="">Blog</a></p>
+                                <p><a href="">Agenta</a></p>
+                                <p><a href="">Contact</a></p>
+                                <p><a href="">FAQs</a></p>
+                                <p><a href="">Properties</a></p>
+                            </div>
+                            <div class="footer_link">
+                                <p><a href="">CMS Pages</a></p>
+                                <p><a href="">Property</a></p>
+                                <p><a href="">Property Single</a></p>
+                                <p><a href="">Blog Categories</a></p>
+                                <p><a href="">Blog Single</a></p>
+                                <p><a href="">Agent Single</a></p>
+                            </div>
+                            <div class="footer_link">
+                                <p><a href="">Utility Pages</a></p>
+                                <p><a href="">Style Guide</a></p>
+                                <p><a href="">Changelog</a></p>
+                                <p><a href="">Licenses</a></p>
+                                <p><a href="">404</a></p>
+                                <p><a href="">Password</a></p>
+                                <p><a href="">Search</a></p>
+                            </div>
+                        </div>
+                        <div class="footer_serch">
+                            <div class="footer_serch_text_content">
+                                <h6>Subscribe</h6>
+                                <p>Join our newsletter to stay up to date on features and releases.</p>
+                            </div>
+                            <form>
+                                <input type="email" placeholder="Enter your email">
+                                <button>Subscribe</button>
+                            </form>
+                            <div class="footer_text_content_end">
+                                <p>By subscribing you agree to with our</p>
+                                <br>
+                                <p>Privacy Policy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="container">
+                        <div class="flex_elemnt">
+                            <div class="footer_end_text_content">
+                                <p>© Realco by</p>
+                                <p>Minimal Square</p>
+                            </div>
+                            <div class="footer_icon_section">
+                                <img src="./imgs/IMAGE_facebook.svg" alt="">
+                                <img src="./imgs/IMAGE_tw.svg" alt="">
+                                <img src="./imgs/IMAGE_insta.svg" alt="">
+                                <img src="./imgs/IMAGE_link.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

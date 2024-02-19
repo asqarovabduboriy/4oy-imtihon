@@ -1,0 +1,457 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: white; 
+  z-index: 1000; }
+  
+
+
+
+.responsive_header {
+  display: none;
+}
+.main_imgs_mobilni {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .responsive_header {
+    display: inline;
+  }
+  header {
+    display: none;
+  }
+  .main_imgs_mobilni {
+    display: inline;
+    display: flex;
+    justify-content: center;
+  }
+  .main_imgs {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .responsive_header {
+    display: inline;
+  }
+  header {
+    display: none;
+  }
+  .main_imgs_mobilni {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 384px;
+  }
+
+  .main_imgs {
+    display: none;
+  }
+
+  .main_logo_two {
+    margin-right: 0 auto;
+  }
+}
+
+///main3 ////////////////MOBILNI
+@media screen and (max-width: 999px) {
+  .card_section_big {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .there_wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .four_wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .main_olti_text_content {
+    p {
+      color: rgb(231, 232, 227);
+      font-family: "Roboto";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0%;
+      text-align: center;
+      max-width: 456px;
+      margin: 0 auto;
+      margin-top: 29px;
+    }
+  }
+  .flex_elment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .footer_text_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer_text_content {
+    gap: 25px;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer_text_content_wraper {
+    p {
+      color: rgb(101, 102, 92);
+      font-family: "Roboto";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0%;
+      text-align: left;
+      max-width: 510px;
+      margin-top: 29px;
+    }
+  }
+  .footer_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .justify_content {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .imgs_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imgs_container img {
+    width: calc(20% - 10px);
+    margin: 5px;
+  }
+  .card_section_big {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card_section p {
+    margin-right: 0 auto;
+    max-width: 455px;
+  }
+  .main_text {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  .main_text {
+    h1 {
+      max-width: 450px;
+      color: rgb(42, 44, 31);
+      font-family: "Roboto";
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 57.2px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    p {
+      max-width: 400px;
+      color: rgb(101, 102, 92);
+      font-family: "Roboto";
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+
+  .there_wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .four_wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .location_section {
+    p {
+      color: rgb(101, 102, 92);
+      font-family: "Roboto";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0%;
+      text-align: center;
+      max-width: 413px;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+  }
+
+  .main_olti_text_content {
+    p {
+      color: rgb(231, 232, 227);
+      font-family: "Roboto";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0%;
+      text-align: center;
+      max-width: 456px;
+      margin: 0 auto;
+      margin-top: 29px;
+    }
+  }
+
+  button {
+    box-sizing: border-box;
+    border: 1px solid rgb(207, 111, 73);
+    border-radius: 6px;
+    background: rgb(207, 111, 73);
+  }
+  button {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 13px 25px;
+  }
+
+  .flex_elment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main_logo {
+    img {
+      display: none;
+    }
+  }
+  .main_text {
+    h1 {
+      max-width: 450px;
+      color: rgb(42, 44, 31);
+      font-family: "Roboto";
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 57.2px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    p {
+      max-width: 400px;
+      color: rgb(101, 102, 92);
+      font-family: "Roboto";
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+  .main_text {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .btn_serch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main_imgs_mobilni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  .main_logo_two {
+    img {
+      display: none;
+    }
+  }
+  .imgs_room {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  .main_sectin_there_text {
+    align-items: center;
+    max-width: 400px;
+
+    p {
+      max-width: 400px;
+    }
+  }
+  .four_text_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      align-items: center;
+      max-width: 385px;
+    }
+    p {
+      max-width: 300px;
+      align-items: center;
+    }
+  }
+  .four_cards_secction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer_text_content_wraper {
+    p {
+      max-width: 350px;
+    }
+  }
+  .justify_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main_imgs_mobilni {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .card_section {
+    p {
+      max-width: 300px;
+    }
+  }
+  .border_crad {
+    max-width: 305px;
+  }
+  .card_text_section h1 {
+    color: rgb(42, 44, 31);
+    font-family: "Roboto";
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .card_text_section p {
+    color: rgb(101, 102, 92);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 238px;
+  }
+  .card_text_section {
+    padding: 0px;
+  }
+  .main_sectin_there_text {
+    max-width: 300px;
+    h1 {
+      font-size: 18px;
+      max-width: 250px;
+    }
+    p {
+      font-size: 18px;
+      max-width: 280px;
+    }
+  }
+  .main_sectin_there_btn_wraper {
+    p {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .imgs_room {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .rOOm_one {
+      display: none;
+    }
+  }
+  .hamasini_Orapturadigan {
+    max-width: 300px;
+    .rasmni_orapturadigan {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  .location_section {
+    p {
+      max-width: 300px;
+    }
+  }
+  .main_olti_text_content {
+    p {
+      max-width: 300px;
+    }
+  }
+  .Hamasini_orapturuvchhi_ota_element {
+    max-width: 300px;
+    .rasm_orapturuvchi {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  .text_orapturuvchi_sectino{
+  p{
+  max-width: 240px;
+  }
+  }
+}

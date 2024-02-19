@@ -1,0 +1,122 @@
+
+.wrapper {
+    position: relative;
+}
+
+.checkbox {
+    display: none;
+}
+
+.switch {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.switch::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+
+.checkbox:checked + .switch {
+    background-color: #2196F3;
+}
+
+.checkbox:checked + .switch::after {
+    transform: translateX(20px);
+}
+
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+.wrapper {
+    display: inline-block; 
+    margin-left: 10px; 
+}
+
+
+.checkbox {
+    display: none;
+}
+
+
+.switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+.switch::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+
+.checkbox:checked + .switch {
+    background: rgb(207, 111, 73);    
+    ;
+}
+
+.checkbox:checked + .switch::after {
+    transform: translateX(20px);
+}
+
+
+.dark-mode .switch {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .switch::after {
+    background-color: #777;
+    color: white;
+}
+
+
+.light-mode .switch {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+.light-mode .switch::after {
+    background-color: #f1f1f1;
+    color: white;
+}
